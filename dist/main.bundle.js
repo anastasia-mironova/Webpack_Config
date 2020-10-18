@@ -163,7 +163,49 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/styles.css */ \"./styles/styles.css\");\n/* harmony import */ var _styles_styles_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_styles_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_scss_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/scss.scss */ \"./styles/scss.scss\");\n/* harmony import */ var _styles_scss_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_scss_scss__WEBPACK_IMPORTED_MODULE_1__);\nfunction _typeof(obj) { \"@babel/helpers - typeof\"; if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }; } return _typeof(obj); }\n\n\n\n\nfunction getDate(day, month, year) {\n  var format = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : \"year_month_day\";\n\n  if (0 < day && day <= 31 && 0 <= +month && month <= 31 && year.toString().length === 4) {\n    var date = new Date(year, month, day);\n\n    switch (format) {\n      case \"day.month.year\":\n        return date.toLocaleDateString(\"ru\");\n\n      case \"year_month_day\":\n        return date.toLocaleDateString(\"en-US\");\n\n      case \"object\":\n        return date;\n\n      case \"iso\":\n        return date.toISOString();\n      //   default:\n      //     return null;\n    }\n  }\n\n  return null;\n}\n\nconsole.log(getDate(1, 14, 1994, \"iso\"));\nconsole.log(getDate(1, 11, 1994, \"iso\"));\nconsole.log(_typeof(getDate(1, 13, 1994, \"object\")));\nconsole.log(getDate(1, 11, 1994, \"iskhlgo\"));\nconsole.log(getDate(1, 11, 1994, \"year_month_day\"));\nconsole.log(getDate(1, 11, 1994, \"day.month.year\"));\n\n//# sourceURL=webpack:///./index.js?");
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _styles_styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/styles.css */ "./styles/styles.css");
+/* harmony import */ var _styles_styles_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_styles_css__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _styles_scss_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/scss.scss */ "./styles/scss.scss");
+/* harmony import */ var _styles_scss_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_scss_scss__WEBPACK_IMPORTED_MODULE_1__);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+
+
+
+function getDate(day, month, year) {
+  var format = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : "year_month_day";
+
+  if (0 < day && day <= 31 && 0 <= +month && month <= 31 && year.toString().length === 4) {
+    var date = new Date(year, month, day);
+
+    switch (format) {
+      case "day.month.year":
+        return date.toLocaleDateString("ru");
+
+      case "year_month_day":
+        return date.toLocaleDateString("en-US");
+
+      case "object":
+        return date;
+
+      case "iso":
+        return date.toISOString();
+      //   default:
+      //     return null;
+    }
+  }
+
+  return null;
+}
+
+console.log(getDate(1, 14, 1994, "iso"));
+console.log(getDate(1, 11, 1994, "iso"));
+console.log(_typeof(getDate(1, 13, 1994, "object")));
+console.log(getDate(1, 11, 1994, "iskhlgo"));
+console.log(getDate(1, 11, 1994, "year_month_day"));
+console.log(getDate(1, 11, 1994, "day.month.year"));
+var a = 42;
 
 /***/ }),
 
@@ -174,7 +216,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// extracted by mini-css-extract-plugin\n    if(false) { var cssReload; }\n  \n\n//# sourceURL=webpack:///./styles/scss.scss?");
+// extracted by mini-css-extract-plugin
+    if(false) { var cssReload; }
+  
 
 /***/ }),
 
@@ -185,7 +229,9 @@ eval("// extracted by mini-css-extract-plugin\n    if(false) { var cssReload; }\
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// extracted by mini-css-extract-plugin\n    if(false) { var cssReload; }\n  \n\n//# sourceURL=webpack:///./styles/styles.css?");
+// extracted by mini-css-extract-plugin
+    if(false) { var cssReload; }
+  
 
 /***/ }),
 
@@ -196,8 +242,11 @@ eval("// extracted by mini-css-extract-plugin\n    if(false) { var cssReload; }\
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! @babel/polyfill */\"../node_modules/@babel/polyfill/lib/index.js\");\nmodule.exports = __webpack_require__(/*! ./index.js */\"./index.js\");\n\n\n//# sourceURL=webpack:///multi_@babel/polyfill_./index.js?");
+__webpack_require__(/*! @babel/polyfill */"../node_modules/@babel/polyfill/lib/index.js");
+module.exports = __webpack_require__(/*! ./index.js */"./index.js");
+
 
 /***/ })
 
 /******/ });
+//# sourceMappingURL=main.bundle.js.map

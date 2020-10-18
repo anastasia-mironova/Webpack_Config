@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///styles/styles.css","webpack:///styles/scss.scss"],"names":[],"mappings":"AACA;IACI,UAAU;IACV,eAAe;AACnB,C;ACJA;EACI;AACJ,C","file":"main.bundle.css","sourcesContent":["@import \"~normalize.css\";\r\nspan {\r\n    color: red;\r\n    font-size: 60px;\r\n}","span {\r\n    background-color: aquamarine;\r\n}"],"sourceRoot":""}

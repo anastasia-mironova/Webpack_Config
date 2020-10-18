@@ -33,4 +33,4 @@ console.log(typeof getDate(1, 13, 1994, "object"));
 console.log(getDate(1, 11, 1994, "iskhlgo"));
 console.log(getDate(1, 11, 1994, "year_month_day"));
 console.log(getDate(1, 11, 1994, "day.month.year"));
-const a = 42
+const a = 42;
