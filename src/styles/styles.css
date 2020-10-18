@@ -1,0 +1,5 @@
+@import "~normalize.css";
+span {
+    color: red;
+    font-size: 60px;
+}
