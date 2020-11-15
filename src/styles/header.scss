@@ -1,0 +1,98 @@
+@font-face {
+  font-family: Open Sans Condensed;
+  /* Имя шрифта */
+  src: url("../assets/fonts/OpenSansCondensed-Bold.ttf");
+  /* Путь к файлу со шрифтом */
+}
+@mixin text-shadow-param {
+  text-shadow: 0px 7px 6px rgba(0, 0, 0, 0.4);
+}
+$main-font-color: #fff1f1;
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 15%;
+  justify-content: space-around;
+  position: relative;
+  z-index: 2;
+}
+.header__logo {
+  font-size: 48px;
+  line-height: 65px;
+  margin-left: 20px;
+}
+
+.header__menu {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__menu-item {
+  padding: 5%;
+}
+
+.header__menu-item:hover {
+  background-color: rgba(184, 190, 216, 0.246);
+}
+
+.header__menu-link,
+.link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 27px;
+  color: $main-font-color;
+  text-shadow: 0px 7px 6px rgba(0, 0, 0, 0.4);
+}
+
+.header__search-form {
+  width: 260px;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $main-font-color;
+  position: relative;
+}
+.search-form__input::placeholder {
+  font-style: italic;
+  color: rgb(187, 182, 182);
+}
+.search-form__input {
+  width: 230px;
+  height: 35px;
+
+  padding-left: 10px;
+  background: #f9f0da;
+  color: #9e9c9c;
+}
+
+.search-form__input,
+.search-form__button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.search-form__button:before {
+  content: url("../assets/img/search_logo.png");
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: rgb(27, 27, 219);
+  font-weight: 900;
+}
+.search-form__button {
+  height: 42px;
+  width: 42px;
+  position: absolute;
+  top: 1px;
+  right: 2px;
+  cursor: pointer;
+}

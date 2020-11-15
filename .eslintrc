@@ -1,13 +1,49 @@
 {
-  "parser": "@babel-eslint",
-  "rules": {
-    "no-unused-vars": "warn"
-  },
   "env": {
+    "browser": true,
+    "commonjs": true,
     "es6": true,
-    "browser": true
+    "node": true
   },
   "extends": [
     "eslint:recommended"
-  ]
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true,
+      "legacyDecorators": true
+    },
+    "sourceType": "module",
+    "allowImportExportEverywhere": false
+  },
+  "plugins": [],
+  "rules": {
+    "indent": [
+      "off",
+      4
+    ],
+    "linebreak-style": [
+      "warn",
+      "unix"
+    ],
+    "no-console": "off",
+    "no-mixed-spaces-and-tabs": "warn",
+    "no-unused-vars": "off",
+    "react/prop-types": [
+      "warn",
+      {
+        "skipUndeclared": true
+      }
+    ],
+    "quotes": [
+      "off",
+      "single"
+    ],
+    "semi": [
+      "off",
+      "always"
+    ]
+  }
 }
